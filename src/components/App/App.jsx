@@ -9,6 +9,9 @@ function App() {
   return (
     <div className="App">
       <h1>SPAs!</h1>
+      <Animals />
+      <Plants />
+      <Home />
     </div>
   );
 }
