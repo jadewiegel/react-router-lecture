@@ -5,6 +5,7 @@ import './App.css';
 import Animals from '../Animals/Animals.jsx';
 import Plants from '../Plants/Plants.jsx';
 import Home from '../Home/Home.jsx';
+import AnimalDetail from '../Animals/AnimalDetail';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
         </ul>
 
 
-        <Route path="/animals">
+        <Route path="/animals" exact>
           <Animals />
         </Route>
 
@@ -42,6 +43,10 @@ function App() {
 
         <Route path="/" exact> 
           <Home />
+        </Route>
+
+        <Route path="/animals/:id" exact>
+          <AnimalDetail />
         </Route>
 
       </div>
